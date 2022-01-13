@@ -31,6 +31,14 @@ const quizDB = [
         d: "JordenShopes",
         ans:"ans1"
     }
+    {
+        question: "Q5: Which type of JavaScript language is ___",
+        a: "Object-Oriented",
+        b: "Object-Based",
+        c: "Assembly-language",
+        d: "High-level",
+        ans:"ans2"
+    }
 ];
 
 const question = document.querySelector('.question');
@@ -41,7 +49,7 @@ const option4 = document.querySelector('#option4');
 const submit = document.querySelector('#submit');
 
 const answers = document.querySelectorAll('.answer');
-
+const innerDiv = document.querySelector('#inner-div');
 const showScore = document.querySelector('#showScore');
 
 let questionCount = 0;
@@ -93,7 +101,7 @@ submit.addEventListener('click', () => {
         loadQuestion();
     }else{
 
-        showScore.innerHTML=`<h3> Your Scored: ${score}/${quizDB.length}✌️</h3> 
+        innerDiv.innerHTML=`<h3> Your Scored: ${score}/${quizDB.length}✌️</h3> 
         <diV class="ctn"><button class="btn" onclick="location.reload()">Play Again </button></div>
         `;
 
