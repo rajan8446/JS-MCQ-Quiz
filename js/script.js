@@ -1,3 +1,8 @@
+var h2=document.getElementById("h2");
+var ul=document.getElementById("ul");
+var container=document.querySelector(".container");
+
+
 const quizDB = [
     {
         question: "Q1: what is the full form of HTML?",
@@ -100,7 +105,9 @@ submit.addEventListener('click', () => {
     if(questionCount < quizDB.length){
         loadQuestion();
     }else{
-
+        h2.style.display="none";
+        ul.style.display="none";
+        container.style.display="none";
         showScore.innerHTML=`<h3> Your Scored: ${score}/${quizDB.length}✌️</h3> 
         <diV class="ctn"><button class="btn" onclick="location.reload()">Play Again </button></div>
         `;
