@@ -101,7 +101,7 @@ submit.addEventListener('click', () => {
         loadQuestion();
     }else{
 
-        innerDiv.innerHTML=`<h3> Your Scored: ${score}/${quizDB.length}✌️</h3> 
+        showScore.innerHTML=`<h3> Your Scored: ${score}/${quizDB.length}✌️</h3> 
         <diV class="ctn"><button class="btn" onclick="location.reload()">Play Again </button></div>
         `;
 
