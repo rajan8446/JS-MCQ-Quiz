@@ -12,7 +12,7 @@ const quizDB = [
         a: "Cascading  Style Sheets",
         b: "Cascading Style Sheep",
         c: "Cartoon Style Sheets",
-        D: "Cascading Super Sheets",
+        d: "Cascading Super Sheets",
         ans:"ans1"
     },
     {
