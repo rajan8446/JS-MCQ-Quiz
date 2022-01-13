@@ -30,7 +30,7 @@ const quizDB = [
         c: "JustScript",
         d: "JordenShopes",
         ans:"ans1"
-    }
+    },
     {
         question: "Q5: Which type of JavaScript language is ___",
         a: "Object-Oriented",
